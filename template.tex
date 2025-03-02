@@ -1,0 +1,88 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{parskip}
+\usepackage[a4paper, margin=0.6in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
+\usepackage{multicol}
+
+\newcommand{\cvsection}[1]{
+    \section*{\MakeUppercase{#1}}
+    \vspace*{0.1cm}
+    \hrule
+}
+\newcommand{\cvsubsection}[1]{
+    \subsection*{\MakeUppercase{#1}}
+}
+
+\newcommand{\minilink}[2]{
+    \raisebox{.3ex}{\footnotesize{\href{#1}{\textsc{#2}}}}
+}
+
+\begin{document}
+
+{\begin{minipage}{0.5\textwidth}
+    \section*{Full Name}
+    Undergraduate Student \\ 
+    Degree (Major) \\
+    \textbf{Institution, City}
+\end{minipage}
+\hfill
+\begin{minipage}[t][][t]{0.3\textwidth}
+    \begin{flushright}
+        \href{https://example.com}{example.com}
+
+        \href{mailto:example@uni.edu}{example@uni.edu}
+
+        \href{https://github.com/example}{github.com/example}
+    \end{flushright}
+\end{minipage}}
+
+\cvsection{Research Interests}
+I am very interested in \textbf{foo}, \textbf{bar}, and \textbf{baz}.
+
+\cvsection{Education}
+\textbf{School} \hfill Aug`24 -- Present \\
+Some words.
+
+\textbf{Previous School} \hfill Aug`23 -- Aug`24 \\
+Some words.
+
+\cvsection{Research Experience}
+
+\cvsubsection{Research Area}
+
+\textbf{Research Project}
+\hfill
+\minilink{https://example.com}{Item}
+\minilink{https://example.com}{Item}
+\\
+\textit{Under preparation.} Work with X, Y, and Z.
+
+\cvsubsection{Another Research Area}
+
+\textbf{Another Research Project}
+\hfill
+\minilink{https://example.com}{Item}
+\\
+\textit{Presented at XYZ.} Work with A, B, and C.
+
+\cvsection{Other Projects}
+Some content.
+
+\cvsection{Talks}
+Some content.
+
+\cvsection{Awards}
+Some content.
+
+\cvsection{Volunteering}
+Some content.
+
+\cvsection{Another Section}
+Some more content.
+
+\end{document}
